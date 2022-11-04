@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шундикова Диана Андреевна</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="list">
+        <div class="top">
+            <i class="fa fa-phone-square" onclick="buttomContact()" aria-hidden="true"></i>
+            <div class="search-wrap">
+                <i class="fa fa-search" onclick="buttomSearch()" aria-hidden="true"></i>
+                    <input type="search" onclick="emptySearch()" class="search" id="search" placeholder="Поиск...">
+            </div>
+        </div>
+        <div id="contacts"></div>
+        <div class="bottom">
+            <button class="buttom-add" onclick="buttomAdd()">Добавить</button>
+        </div>
+    </div>
+    <div id="add">
+        <div class="top">
+            <i class="fa fa-phone-square" aria-hidden="true"></i>
+            <h3 class="title">Контакт</h3>
+        </div>
+        <form class="form">
+            <input type="text" id="input-name" placeholder="Имя">
+            <input type="text" class="tel" id="input-phone" max="11" placeholder="Телефон">
+
+            <div class="check-favorites">
+                <input type="checkbox" class = 'custom-checkbox' id="favorites" name="favorites">
+                <label for="favorites">Избранные</label>
+            </div>
+        </form>
+        <div class="bottom">
+            <button class="buttom-add" onclick="buttomСreate()">Создать</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
